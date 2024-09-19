@@ -1,0 +1,268 @@
+.footer {
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 302px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #2963A3;
+    padding: 0px 120px;
+    font-family: "Montserrat";
+}
+
+.footer__section {
+    display: flex;
+    width: 1200px;
+    margin-top: 40px;
+}
+
+/* Меню */
+.footer__nav {
+    width: 310px;
+}
+
+.footer__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 19px 85px;
+    list-style: none;
+}
+
+.footer__link,
+.footer__span {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.footer__link {
+    text-decoration: none;
+}
+
+.footer__span {
+    display: block;
+    font-size: 18px;
+    width: 356px;
+}
+
+/* Рассылка */
+.footer__center {
+    width: 486px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 91px;
+    margin-right: 91px;
+
+}
+
+.footer__mailing {
+    display: flex;
+}
+
+/* Кнопка */
+.footer__input,
+.footer__btn {
+    border: none;
+    border-radius: 4px;
+    height: 48px;
+    outline: none;
+}
+
+.footer__input {
+    box-sizing: border-box;
+    padding-left: 16px;
+    width: 310px;
+}
+
+.footer__btn {
+    background-color: #16C8BB;
+    width: 64px;
+    margin-left: -5px;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.footer__btn_img {
+    margin: 12px 20px;
+}
+
+.footer__text {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.footer__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 122px;
+    margin-top: 0px;
+}
+
+.footer__logo_btn {
+    cursor: pointer;
+}
+
+.footer_logo {
+    display: flex;
+    gap: 16px;
+}
+
+.footer__line {
+    width: 1200px;
+    border-color: rgba(157, 157, 157, 0.3);
+    ;
+
+}
+
+.footer__basement {
+    margin-bottom: 17px;
+}
+
+.footer__basement_text {
+    margin-right: 48px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer__basement_text:first-child::before {
+    content: "\00A9";
+}
+
+/* iPad Pro 12.9 */
+@media screen and (max-width:1024px) {
+    .footer {
+        max-width: 1024px;
+        height: 302px;
+        padding: 0px 38px 0px 26px;
+    }
+
+    .footer__section,
+    .footer__line {
+        width: 960px;
+    }
+
+    .footer__nav {
+        width: 247px;
+    }
+
+    .footer__list {
+        gap: 19px 25px;
+    }
+
+    .footer__center {
+        width: 450px;
+        margin-left: 21px;
+        margin-right: 21px;
+    }
+}
+
+/* iPad mini */
+@media screen and (max-width:768px) {
+    .footer {
+        max-width: 768px;
+        height: 454px;
+        padding: 0px 35px 0px 23px;
+    }
+
+    .footer__section {
+        width: 728px;
+        flex-wrap: wrap;
+    }
+
+    .footer__center {
+        margin-left: 20px;
+        margin-right: 0px;
+
+    }
+
+    .footer__line {
+        width: 728px;
+    }
+
+    .footer__icons {
+        margin-top: 26px;
+    }
+}
+
+/* iPhone 11 Pro Max */
+@media screen and (max-width:414px) {
+    .footer {
+        max-width: 414px;
+        height: 746px;
+        padding: 0px 19px 0px 20px;
+    }
+
+    .footer__section {
+        width: 375px;
+        flex-wrap: wrap;
+        margin-left: -4px;
+    }
+
+    .footer__center {
+        margin: 23px 0px;
+    }
+
+    .footer__list {
+        gap: 19px 150px;
+        grid-template-columns: 111px 111px;
+    }
+
+    .footer__line {
+        width: 728px;
+    }
+
+    .footer__icons {
+        margin-top: 0px;
+        height: 102px;
+    }
+
+    .footer__basement {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* iPhone SE */
+@media screen and (max-width:320px) {
+    .footer {
+        max-width: 320px;
+    }
+
+    .footer__section {
+        width: 288px;
+        flex-wrap: wrap;
+        margin-left: -4px;
+    }
+
+    .footer__center {
+        margin: 23px 0px;
+        width: 288px;
+    }
+
+    .footer__span {
+        width: 288px;
+    }
+
+    .footer__btn {
+        display: none;
+    }
+
+    .footer__list {
+        gap: 19px 78px;
+    }
+
+    .footer__line {
+        width: 288px;
+    }
+
+    .footer__icons {
+        margin-top: 10px;
+    }
+}

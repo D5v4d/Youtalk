@@ -1,0 +1,560 @@
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+    font-family: "Montserrat";
+}
+
+/* Навигация */
+.main__list {
+    display: flex;
+    list-style: none;
+    width: 110px;
+    height: 18px;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.main__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__item:nth-of-type(1)::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-image: url(img/main/svg/Vector.svg);
+
+    background-repeat: no-repeat;
+    margin-left: 4px;
+}
+
+.main__link {
+    text-decoration: none;
+    color: #333333;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* Заголовок */
+.main__header {
+    font-weight: bold;
+    font-size: 48px;
+    margin-top: 30px;
+    margin-bottom: 32px;
+    margin-left: -3px;
+}
+
+/* Описание */
+.main__breadcrumb {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 1181px;
+    gap: 8px 0px;
+}
+
+.main__text {
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333333;
+    border: 1px solid #C1C5CD;
+    border-radius: 24px;
+    padding: 6px 8px;
+    cursor: pointer;
+
+}
+
+.main__text:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 68px;
+}
+
+.main__text:nth-child(3) {
+    border: 2px solid #16C8BB;
+    display: flex;
+    width: 67px;
+    justify-content: space-between;
+}
+
+/* Cекция */
+.main__section_activity {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+}
+
+.article {
+    text-decoration: none;
+}
+
+/* Шапка блога */
+.main__article__conteiner {
+    width: 588px;
+    height: 499px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dedede;
+    border-top: none;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.main__conteiner {
+    width: 588px;
+    height: 260px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.main__conteiner.eggs {
+    background-image: url(img/main/png/desktop/eggs.png);
+}
+
+.main__conteiner.run {
+    background-image: url(img/main/png/desktop/run.png);
+}
+
+/*контейнер Эмодзи и текста*/
+.main__conteiner_text {
+    display: inline-flex;
+    flex-direction: row;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 14px;
+    color: #333333;
+    border: 1px solid #C1C5CD;
+    background-color: rgba(255, 255, 255, 0.7);
+    ;
+    border-radius: 24px;
+    padding: 6px 6px;
+    gap: 4px;
+    margin-top: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+/* Текст */
+.main__body {
+    display: flex;
+    flex-direction: column;
+    width: 556px;
+    height: 200px;
+}
+
+.main__body_header {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333333;
+    margin-top: 16px;
+}
+
+.main__author {
+    font-weight: 400;
+    font-size: 12px;
+    color: #494949;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.main__scription {
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+}
+
+.main__date {
+    width: 97%;
+    font-weight: 400;
+    font-size: 12px;
+    color: #868686;
+    margin-bottom: 16px;
+    margin-left: 16px;
+}
+
+/* Фон */
+.main__background {
+    background-image: url(img/main/svg/background.svg);
+    position: absolute;
+    width: 1440px;
+    height: 672px;
+    z-index: -1;
+    margin-left: -120px;
+    margin-top: 100px;
+}
+
+.main__section_conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.main__conteiner_grid {
+    width: 384px;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dedede;
+    border-top: none;
+    border-radius: 16px;
+
+}
+
+.main__conteiner__album {
+    width: 384px;
+    height: 260px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.main__conteiner__album.fatigue {
+    background-image: url(img/main/png/desktop/fatigue.png);
+}
+
+.main__conteiner__album.swim {
+    background-image: url(img/main/png/desktop/swim.png);
+}
+
+.main__conteiner__album.emotions {
+    background-image: url(img/main/png/desktop/emotions.png);
+}
+
+.main__conteiner__album.work {
+    background-image: url(img/main/png/desktop/work.png);
+}
+
+.main__conteiner__album.communicate {
+    background-image: url(img/main/png/desktop/communicate.png);
+}
+
+.main__conteiner__album.control {
+    background-image: url(img/main/png/desktop/control.png);
+}
+
+.main__body_conteiner {
+    display: flex;
+    flex-direction: column;
+    width: 352px;
+    height: 216px;
+}
+
+/* Кнопка */
+.main__btn {
+    width: 182px;
+    height: 42px;
+    background-color: #35B3A9;
+    color: #FFFFFF;
+    margin: 56px 509px 96px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* iPad Pro 12.9 */
+@media screen and (max-width:1024px) {
+    .main {
+        width: 960px;
+    }
+
+    .main__list {
+        margin-bottom: 32px;
+    }
+
+    .main__breadcrumb {
+        justify-content: start;
+        flex-wrap: wrap;
+        width: 934px;
+        gap: 8px 8px;
+    }
+
+    .main__article__conteiner,
+    .main__conteiner {
+        width: 468px;
+    }
+
+    .main__body {
+        width: 436px;
+    }
+
+    .main__background {
+        display: none;
+    }
+
+    .main__conteiner_grid {
+        width: 304px;
+        height: 458px;
+    }
+
+    .main__conteiner__album {
+        width: 304px;
+        height: 206px;
+    }
+
+    .main__body_conteiner {
+        width: 272px;
+    }
+
+    .main__btn {
+        height: 42px;
+        margin: 35px 389px 60px;
+    }
+
+    .main__conteiner.eggs {
+        background-image: url(img/main/png/iPad_Pro_12/eggs.png);
+    }
+
+    .main__conteiner.run {
+        background-image: url(img/main/png/iPad_Pro_12/run.png);
+    }
+
+    .main__conteiner__album.fatigue {
+        background-image: url(img/main/png/iPad_Pro_12/fatigue.png);
+    }
+
+    .main__conteiner__album.swim {
+        background-image: url(img/main/png/iPad_Pro_12/swim.png);
+    }
+
+    .main__conteiner__album.emotions {
+        background-image: url(img/main/png/iPad_Pro_12/emotions.png);
+    }
+
+    .main__conteiner__album.work {
+        background-image: url(img/main/png/iPad_Pro_12/work.png);
+    }
+
+    .main__conteiner__album.communicate {
+        background-image: url(img/main/png/iPad_Pro_12/communicate.png);
+    }
+
+    .main__conteiner__album.control {
+        background-image: url(img/main/png/iPad_Pro_12/control.png);
+    }
+}
+
+/* iPad mini */
+@media screen and (max-width:768px) {
+    .main {
+        width: 728px;
+    }
+
+    .main__breadcrumb {
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 8px;
+        width: 728px;
+    }
+
+    .main__article__conteiner,
+    .main__conteiner {
+        width: 728px;
+        height: 599px;
+    }
+
+    .main__section_activity {
+        flex-wrap: wrap;
+    }
+
+    .main__body {
+        width: 696px;
+        height: 240px
+    }
+
+    .main__section_conteiner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main__conteiner_grid,
+    .main__conteiner__album {
+        width: 352px;
+    }
+
+    .main__body_conteiner {
+        width: 320px;
+    }
+
+    .main__btn {
+        height: 48px;
+        margin: 33px 273px 55px;
+    }
+
+    .main__conteiner.eggs {
+        background-image: url(img/main/png/iPad_mini/eggs.png);
+    }
+
+    .main__conteiner.run {
+        background-image: url(img/main/png/iPad_mini/run.png);
+    }
+
+    .main__conteiner__album.fatigue {
+        background-image: url(img/main/png/iPad_mini/fatigue.png);
+    }
+
+    .main__conteiner__album.swim {
+        background-image: url(img/main/png/iPad_mini/swim.png);
+    }
+
+    .main__conteiner__album.emotions {
+        background-image: url(img/main/png/iPad_mini/emotions.png);
+    }
+
+    .main__conteiner__album.work {
+        background-image: url(img/main/png/iPad_mini/work.png);
+    }
+
+    .main__conteiner__album.communicate {
+        background-image: url(img/main/png/iPad_mini/communicate.png);
+    }
+
+    .main__conteiner__album.control {
+        background-image: url(img/main/png/iPad_mini/control.png);
+    }
+}
+
+/* iPhone 11 Pro Max */
+@media screen and (max-width:414px) {
+
+    .main,
+    .main__conteiner_grid,
+    .main__conteiner__album {
+        width: 374px;
+    }
+
+    .main__header {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .main__breadcrumb {
+        width: 384px;
+        flex-wrap: nowrap;
+        gap: 8px 8px;
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+
+    .main__text {
+        gap: 0px 4px;
+        white-space: nowrap
+    }
+
+    .main__article__conteiner,
+    .main__conteiner {
+        width: 374px;
+        height: 466px;
+    }
+
+    .main__body {
+        width: 342px;
+        height: 510px;
+    }
+
+    .main__section_conteiner {
+        grid-template-columns: 1fr;
+    }
+
+    .main__body_conteiner {
+        width: 342px;
+    }
+
+    .main__btn {
+        height: 48px;
+        margin: 28px 96px 59px;
+    }
+
+    .main__conteiner.eggs {
+        background-image: url(img/main/png/iPhone_11Pro_Max/eggs.png);
+    }
+
+    .main__conteiner.run {
+        background-image: url(img/main/png/iPhone_11Pro_Max/run.png);
+    }
+
+    .main__conteiner__album.fatigue {
+        background-image: url(img/main/png/iPhone_11Pro_Max/fatigue.png);
+    }
+
+    .main__conteiner__album.swim {
+        background-image: url(img/main/png/iPhone_11Pro_Max/swim.png);
+    }
+
+    .main__conteiner_grid:nth-child(n+3) {
+        display: none;
+    }
+}
+
+/* iPhone SE  */
+@media screen and (max-width:320px) {
+
+    .main,
+    .main__conteiner_grid,
+    .main__conteiner__album {
+        width: 288px;
+    }
+
+    .main__breadcrumb {
+        width: 305px;
+    }
+
+    .main__header {
+        font-size: 24px;
+        margin-left: 0px;
+    }
+
+    .main__article__conteiner,
+    .main__conteiner {
+        width: 288px;
+        height: 484px;
+    }
+
+    .main__body {
+        width: 256px;
+        height: 577px;
+    }
+
+    .main__date {
+        margin-top: 20px;
+    }
+
+    .main__body_conteiner {
+        width: 256px;
+    }
+
+    .main__btn {
+        height: 48px;
+        margin: 28px 53px 59px;
+    }
+
+    .main__conteiner.eggs {
+        background-image: url(img/main/png/iPhone_SE/eggs.png);
+    }
+
+    .main__conteiner.run {
+        background-image: url(img/main/png/iPhone_SE/run.png);
+    }
+
+    .main__conteiner__album.fatigue {
+        background-image: url(img/main/png/iPhone_SE/fatigue.png);
+    }
+
+    .main__conteiner__album.swim {
+        background-image: url(img/main/png/iPhone_SE/swim.png);
+    }
+
+    .main__conteiner_grid:nth-child(n+3) {
+        display: none;
+    }
+}
